@@ -1,0 +1,31 @@
+<p>Displaying <%=h items.count if defined?(items) %> item(s)
+<% if defined?(count) %>
+from <%=h count %> item(s) requested
+<% end %>  
+<% if defined?(from) %> 
+starting from <%=h from %>.
+<% end %>  
+<% if defined?(tablelinks) then %>
+<% for tablelink in tablelinks %>
+<a href="<%=h tablelink["href"] %>">[<%=h tablelink["content"] %>]</a>&nbsp
+<% end %>
+<% end %>
+</p>
+
+<div class="NiceCSSTable" >
+<TABLE>
+	<TR>
+		<% for hitem in hitems %>
+		<TD><%=h hitem %></TD>
+		<% end %>
+	</TR>
+	<% for item in items %>
+	<TR>
+		<% for hitem in hitems %>
+		<TD><%=h item[hitem] %></TD>
+		<% end %>
+	</TR>
+	<% end %>
+</TABLE>
+</div>
+

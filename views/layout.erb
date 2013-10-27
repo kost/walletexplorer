@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+	<link rel="stylesheet" type="text/css" href="/css/table.css">
+	<TITLE><%=h title if defined?(title) %> - WalletExplorer</TITLE>
+	<script src="/js/jquery-latest.js"></script>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+<H4><a href="/">WalletExplorer</A></H4>
+<hr>
+<H3><%=h title if defined?(title) %></H3>
+
+<p>
+<% if defined?(coinlinks) then %>
+<% for coinlink in coinlinks %>
+<a href="<%=h coinlink["href"] %>">[<%=h coinlink["content"] %>]</a>&nbsp
+<% end %>
+<% end %>
+</p>
+
+	<%= yield %>
+
+<p></p>
+<hr width="70%" />
+<center>Copyright (C) 2013. Kost. Distributed under GPL.</center>
+</BODY>
+
+</HTML>
+

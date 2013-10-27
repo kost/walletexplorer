@@ -1,0 +1,29 @@
+<SCRIPT>
+$(document).ready(function()
+{
+	<% i=1; for item in items %>
+	$('#td<%=h i.to_s %>').text('Retrieving...');
+	$.get("<%= item['json'] %>", function ( data ) {
+		$('#td<%=h i.to_s %>').text(data.balance);
+	}, "json" );
+	<% i=i+1; end %>
+}
+);
+</SCRIPT>
+<div class="NiceCSSTable" >
+<TABLE>
+	<TR>
+		<TD>Coin</TD>
+		<TD>Balance</TD>
+	</TR>
+	<% i=1 %>
+	<% for item in items %>
+	<TR>
+		<TD><A HREF="<%=h item["link"] %>"><%=h item["coin"] %></A></TD>
+		<TD id="td<%=h i.to_s %>"><%=h item["balance"] %></TD>
+	</TR>
+	<% i=i+1 %>
+	<% end %>
+</TABLE>
+</div>
+
