@@ -8,8 +8,8 @@ require 'erb'
 require_relative 'lib/coin.rb'
 
 set :port, 8081
-# set :environment, :production
-set :bind, '0.0.0.0'
+set :environment, :production
+set :bind, '127.0.0.1'
 
 helpers do
   alias_method :h, :escape_html
