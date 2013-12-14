@@ -11,9 +11,12 @@ You need:
 - Ruby
 - sinatra
 
+Therefore:
+gem install sinatra
 
-Prerequisits
-============
+
+Running
+=======
 
 Just run:
 ruby walletexplorer.rb
@@ -21,6 +24,4 @@ ruby walletexplorer.rb
 
 Note
 ============
-
-It's early stage of development. Listening on localhost only is on purpose. Better have good reasoning
-for changing that ;)
+Currently, it uses only reporting functions. Application does not send coins or create new wallet addresses.
