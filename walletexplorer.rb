@@ -40,7 +40,13 @@ get '/coins' do
 		{:coin => 'ixcoin',:port=>8338},
 		{:coin => 'namecoin',:port=>8336},
 		{:coin => 'ppcoin',:port=>9902},
-		{:coin => 'terracoin',:port=>13332}
+		{:coin => 'terracoin',:port=>13332},
+		{:coin => 'worldcoin',:port=>11082},
+		{:coin => 'digitalcoin',:port=>7998},
+		{:coin => 'freicoin',:port=>8638},
+		{:coin => 'megacoin',:port=>7950},
+		{:coin => 'zetacoin',:port=>8101},
+		{:coin => 'mincoin',:port=>9335}
 	]
 	coins.each { |coin|
 		item=Hash.new
