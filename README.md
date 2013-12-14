@@ -3,6 +3,8 @@ walletexplorer
 
 Wallet Explorer for wallets of different cryptocurrencies (bitcoin, litecoin, ...)
 
+![alt tag](https://raw.github.com/kost/walletexplorer/master/manual/howitlooks.png)
+
 
 Prerequisits
 ============
