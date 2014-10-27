@@ -36,6 +36,7 @@ get '/coins' do
 		{:coin => 'devcoin',:port=>52332},
 		{:coin => 'feathercoin',:port=>9337},
 		{:coin => 'groupcoin',:port=>51332},
+		{:coin => 'gamerscoin',:port=>40001},
 		{:coin => 'i0coin',:port=>7332},
 		{:coin => 'ixcoin',:port=>8338},
 		{:coin => 'namecoin',:port=>8336},
